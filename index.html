@@ -48,10 +48,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-11">
-                    <div class="header-top-welcome">
+                    <div class="header-top-welcome d-flex justify-content-between">
                         <p class="text-center">
                             به فروشگاه باما خوش امدید!
                         </p>
+                        <a class="btn btn-sm py-0 px-2 rounded" href="ProgramComments.html" style="
+                        background-image: linear-gradient(66deg, #E1BEE7, #64B5F6);
+                        color: var(--heading);
+                    ">
+                                                <i class="fas fa-comments         "></i>
+                                                نظرات شما در مورد برنامه
+                                            </a>
                     </div>
                 </div>
             </div>
@@ -70,16 +77,28 @@
             <div class="header-content justify-content-between">
                 <div class="header-media-group">
                     <button class="header-user"><img src="images/user.png" alt="user"></button>
+                    <!--* ممد اینو چک کن اگر کاربر لاگین کرده بود بالایی رو نشون بده در غیر این صورت پاینی رو    -->
+                    <a href="login.html" class="btn btn-outline-info rounded btn-sm py-1 px-3 d-flex align-items-center"
+                        title="ورود">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>ورود</span>
+                    </a>
                     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-                    <button class="header-src"><i class="fas fa-search"></i></button>
+                    <button class="header-widget header-cart first-header-cart" title="Cartlist">
+                        <i class="fas fa-shopping-basket"></i>
+                        <sup>9+</sup>
+                        <span>قیمت کل<small>345000 ريال</small></span>
+                    </button>
                 </div>
 
                 <section class="d-flex">
                     <a href="index.html" class="header-logo">
                         <img src="images/logo.png" alt="logo">
                     </a>
-                    <a href="login.html" class="header-widget" title="My Account">
-                        <img src="images/user.png" alt="user">
+                    <button class="header-user thow-header-user ms-4"><img src="images/user.png" alt="user"></button>
+                    <a href="login.html"
+                        class="btn btn-outline-info btn-sm py-1 px-3 d-none d-lg-flex align-items-center" title="ورود">
+                        <i class="fas fa-sign-in-alt"></i>
                         <span>ورود</span>
                     </a>
                 </section>
@@ -769,18 +788,20 @@
     </div>
     <div class="container-fluid">
         <section class="px-5">
-            <div class="group">
-                <button class="icon">
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <g>
-                            <path
-                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                            </path>
-                        </g>
-                    </svg>
-                </button>
-                <input placeholder="دنبال چی می گردی؟" type="search" class="input">
-            </div>
+            <form action="#" method="get">
+                <div class="group">
+                    <button class="icon">
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <input placeholder="دنبال چی می گردی؟" type="search" name="search" class="input">
+                </div>
+            </form>
         </section>
     </div>
     <!--? مزیت رقابتی -->
